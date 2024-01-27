@@ -1,11 +1,15 @@
-import requests
-import streamlit as st
-from streamlit_lottie import st_lottie
 import pandas as pd
 import plotly.express as px
+import requests
+from pathlib import Path
+
+import streamlit as st
+from streamlit_lottie import st_lottie
 from st_pages import Page, show_pages
 st.set_page_config(layout="wide", page_title="İstanbul Rail System App")
 
+
+dataset_dir = (Path().resolve() / "data").absolute().as_posix()
 show_pages(
     [
         Page("rail_system_app.py", "Passanger", ":metro:" ),
@@ -33,8 +37,8 @@ st.markdown(":exclamation: This dataset was processed before analysis. You can a
 st.info('Since the latest dataset in the data portal is for 2022, this analysis was prepared using it.', icon="ℹ️")
 
 # Datasets
-rail_lines = pd.read_csv("processed_data_2022_rail_stations.csv")
-tr_holidays = pd.read_csv("tr_holidays.csv")
+rail_lines = pd.read_csv(f"{dataset_dir}/processed_data_2022_rail_stations.csv")
+tr_holidays = pd.read_csv(f"{dataset_dir}/tr_holidays.csv")
 
 # Table
 select_line = st.selectbox(
