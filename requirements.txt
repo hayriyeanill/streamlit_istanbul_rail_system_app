@@ -1,0 +1,8 @@
+holidays==0.40
+numpy==1.25.2
+pandas==2.2.0
+plotly==5.18.0
+Requests==2.31.0
+st_pages==0.4.5
+streamlit==1.29.0
+streamlit_lottie==0.0.5
