@@ -14,12 +14,13 @@ translation_dict = {
 
 words_to_remove = [' Kuzey',' Güney',' 2',' 3 Stad Girisi',
                    ' Dogu',' 1 Bati',' kuzey',' güney',
-                   ' 1', '-1', '-2', '-3', '-4',
+                   ' 1', '-1', '-2', '-3', '-4', ' 4',
                    ' M7 Hol 3', ' M7 Hol 1', ' M7 Hol',  'M7 Hol 4',
                    ' (Dogu)', ' (Bati)', ' (Dogu/Adliye)', 'M4 ',
                    ' Bati konkors', ' konkors',
                    ' DOGU', ' M7 HOL', ' M7 HOL 1',
-                   ' BATI', ' M3 HOL 4', ' M3 HOL 3', 'M7 ', ' Çayirbasi']
+                   ' BATI', ' M3 HOL 4', ' M3 HOL 3', 'M7 ', ' Çayirbasi',
+                   ' Cevizli']
 
 def replace_chars(text: str):
     """Replace unknown characters with a new character."""

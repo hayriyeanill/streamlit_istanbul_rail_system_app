@@ -24,5 +24,6 @@ if __name__ == '__main__':
                           header=True)
     # Generate TR holidays data
     holiday_frame = holiday.generate_holidays_data()
+    holiday_frame['Holiday'] = holiday.add_number_to_duplicates(holiday_frame['Holiday'])
     # Save generated data as csv file
     holiday_frame.to_csv(f"{dataset_dir}/tr_holidays.csv", index=False)

@@ -10,3 +10,17 @@ def generate_holidays_data():
                                  columns=['Date', 'Holiday'])
     holiday_frame['Date'] = pd.to_datetime(holiday_frame['Date'])
     return holiday_frame
+
+
+# İsimleri bir sayaçla birleştiren işlevi tanımla
+def add_number_to_duplicates(names):
+    counter = {}
+    new_names = []
+    for name in names:
+        if name in counter:
+            counter[name] += 1
+            new_names.append(f"{name} {counter[name]}. Day")
+        else:
+            counter[name] = 1
+            new_names.append(name)
+    return new_names
