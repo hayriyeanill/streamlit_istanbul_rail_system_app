@@ -24,8 +24,8 @@ st_lottie(lottie_metro_rail, height=200)
 dataset_dir = (Path().resolve() / "data").absolute().as_posix()
 show_pages(
     [
-        Page("rail_system_app.py", "Passanger", "🚇"),
-        Page("pages/passage_cnt.py", "Journey", "🚉"),
+        Page("passanger.py", "Passanger", "🚇"),
+        Page("pages/journeys.py", "Journey", "🚉"),
     ]
 )
 
