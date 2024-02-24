@@ -1,8 +1,8 @@
-# Istanbul Rail Systems Station Based Passenger and Passage Numbers - 2022 Dataset
+# Istanbul Rail Systems Station Based Passenger and Journey Numbers - 2022 Dataset
 
 **Description**
 - Welcome to the Istanbul Rail System Analysis App!
-- This Streamlit application allows users to perform data analysis based on passenger or passage numbers for their chosen rail line in Istanbul.
+- This Streamlit application allows users to perform data analysis based on passenger or journey numbers for their chosen rail line in Istanbul.
 - The dataset used in this project is sourced from the Istanbul Metropolitan Municipality Open Data Portal. You can access the original dataset [here](https://data.ibb.gov.tr/en/dataset/yas-grubuna-gore-rayli-sistemler-istasyon-bazli-yolcu-ve-yolculuk-sayilari/resource/8bed95de-bbe2-4550-80f2-87ca51a97f3d).
 
 **Additional Information**
